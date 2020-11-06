@@ -144,7 +144,7 @@ while True:
     
     send_notification_and_sound(primary_text='Work Time Started' , secondary_text= 'keep going Champ')
     for i in range(3):
-        #wait_30_minutes()
+        wait_30_minutes()
         send_notification_and_sound(primary_text= np.random.choice(list_of_motivation_quotes) , 
                                    secondary_text= 'Another 30 Minutes successfully invested in great work , Keep it up')
     time.sleep(3)
