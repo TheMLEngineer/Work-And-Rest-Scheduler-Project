@@ -30,6 +30,11 @@ from pydub.playback import play
 
 
 
+# Wait 30 seconds for bootup of system and Python to get ready to run the script
+time.sleep(15)
+
+
+
 def send_notification_and_sound(primary_text = 'Great' , secondary_text = 'job'):
    
    '''
@@ -110,8 +115,8 @@ def play_rest_music():
     play(music)
 
 
-
-time.sleep(10)
+launch_jupyter_lab()
+time.sleep(13)
 
 df = pd.read_csv('/home/deku/Documents/AutomationProjects/WorkAndRestSchedulerProject/quotes.csv')
 
@@ -122,8 +127,8 @@ list_of_motivation_quotes = list(df.Quote)
 
 
 
-launch_jupyter_lab()
-time.sleep(5)
+#launch_jupyter_lab()
+#time.sleep(5)
 
 
 
