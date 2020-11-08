@@ -164,7 +164,7 @@ while True:
     
     time.sleep(10)
     
-    music = AudioSegment.from_mp3('wake_up.mp3')
+    music = AudioSegment.from_mp3('/home/deku/Documents/AutomationProjects/WorkAndRestSchedulerProject/wake_up.mp3')
     play(music)
     
     send_notification_and_sound(primary_text= '3 2 1 GO' , secondary_text = 'Welcome Back Champ')
